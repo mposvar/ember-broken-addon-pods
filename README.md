@@ -11,11 +11,12 @@ Repro Steps:
 
 Will Output:
 
-{Component Description}
+```##{Component Description}
 
 Internal Component Content
 
-Yielded Content
+Yielded Content```
+
 
 except for the addon, pod structure, glimmer component, it does not yield the Internal Component Content
 
