@@ -9,16 +9,19 @@ Repro Steps:
 5. `ember s`
 6. Go to http://localhost:4200
 
-Will Output:
-
-```##{Component Description}
-
-Internal Component Content
-
-Yielded Content```
+For each type of component, it should Output:
 
 
-except for the addon, pod structure, glimmer component, it does not yield the Internal Component Content
+```
+<h1>{Component Description}<h1>
+
+<p>Internal Component Content</p>
+
+<p>Yielded Content</p>
+```
+
+
+except for the pod structure - glimmer component defined in the addon. It does not yield the Internal Component Content
 
 
 Seemingly
