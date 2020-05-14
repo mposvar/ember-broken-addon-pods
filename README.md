@@ -9,26 +9,16 @@ Repro Steps:
 5. `ember s`
 6. Go to http://localhost:4200
 
-You should see, in order:
+Will Output:
 
-Apple!
-Banana
+{Component Description}
 
-Cow!
-Horse
+Internal Component Content
 
-Truck!
-Car
+Yielded Content
 
-Instead, you see:
+except for the addon, pod structure, glimmer component, it does not yield the Internal Component Content
 
-Banana
-
-Cow!
-Horse
-
-Truck!
-Car
 
 Seemingly
 MyAddonComponent (Addon, Pod Structure) does not render it's internal template, but does render the yielded block
